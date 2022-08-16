@@ -1,5 +1,5 @@
 # BERROR
-Bearaujus Error (berror) is an error tools that can help you to handle errors even more easier!
+Bearaujus Error (berror) is an errors tool that can help you to handle errors even more easier!
 
 # Example: Error Merger
 ```go
