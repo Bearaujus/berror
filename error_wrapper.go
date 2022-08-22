@@ -28,7 +28,7 @@ func NewErrorWrapper(format string, code ...string) *errorWrapper {
 // return new error from created error wrapper instance
 func (ewi *errorWrapper) New(v ...interface{}) error {
 	if ewi.code != "" {
-		return fmt.Errorf(ewi.format, append([]interface{}{ewi.code}, v)...)
+		return fmt.Errorf(ewi.format, append([]interface{}{ewi.code}, v...)...)
 	}
 
 	return fmt.Errorf(ewi.format, v...)
