@@ -23,12 +23,13 @@ func (eh *exitIfErrorHandler) ExitIfError(err error, exitCode ...int) {
 		return
 	}
 
+	fmt.Println(err)
 	if eh.hasFuncsIFErr() {
 		if errFuncs := eh.executeFuncsIfErr(); errFuncs != nil {
 			fmt.Println(errFuncs)
 		}
 	}
-
+	
 	if len(exitCode) != 0 {
 		os.Exit(exitCode[0])
 	}
