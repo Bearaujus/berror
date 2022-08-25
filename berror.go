@@ -1,6 +1,9 @@
 package berror
 
-import "os"
+import (
+	"fmt"
+	"os"
+)
 
 // Check if error is not nil
 func IsError(err error) bool {
@@ -10,6 +13,7 @@ func IsError(err error) bool {
 // If this function receive not nil error, than do os.exit()
 func ExitIfError(err error, exitCode ...int) {
 	if IsError(err) {
+		fmt.Println(err)
 		if len(exitCode) != 0 {
 			os.Exit(exitCode[0])
 		}
