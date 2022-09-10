@@ -18,8 +18,9 @@ func PrintIfError(rawErr error, replacementErr error) bool {
 		if replacementErr != nil {
 			errString = replacementErr.Error()
 		} else {
-			errString = err.Error()
+			errString = rawErr.Error()
 		}
+		fmt.Println(errString)
 	}
 	
 	return isError
