@@ -11,10 +11,11 @@ func IsError(err error) bool {
 }
 
 // If this function receive not nil error, than print that error
-func PrintIfError(err error) {
+func PrintIfError(err error) bool {
 	if IsError(err) {
 		fmt.Println(err)
 	}
+	return err != nil
 }
 
 // If this function receive not nil error, than do os.exit()
