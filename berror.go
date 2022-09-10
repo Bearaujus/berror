@@ -11,11 +11,17 @@ func IsError(err error) bool {
 }
 
 // If this function receive not nil error, than print that error
-func IsErrorPrint(err error) bool {
-	isError := IsError(err)
+func PrintIfError(rawErr error, replacementErr error) bool {
+	isError := IsError(rawErr)
 	if isError {
-		fmt.Println(err)
+		var errString string
+		if replacementErr != nil {
+			errString = replacementErr.Error()
+		} else {
+			errString = err.Error()
+		}
 	}
+	
 	return isError
 }
 
