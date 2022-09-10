@@ -11,7 +11,7 @@ func IsError(err error) bool {
 }
 
 // If this function receive not nil error, than print that error
-func PrintIfError(err error) bool {
+func IsErrorPrint(err error) bool {
 	isError := IsError(err)
 	if isError {
 		fmt.Println(err)
