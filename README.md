@@ -1,4 +1,4 @@
-# BError - Error Utilities Implementation in Go
+# BError - Error Utilities in Go
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bearaujus/berror/blob/master/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bearaujus/berror)](https://goreportcard.com/report/github.com/bearaujus/berror)
@@ -24,9 +24,9 @@ import "github.com/bearaujus/berror"
 ## Error Wrapper
 
 ### 1. Basic Workflow
-> Create a new `Error Definition` -> Create `Wrapped Error` *error interface 
+> Create a new `Error Definition` -> Create `Wrapped Error` when you want return an error to the parent function and it will capture the stack trace from where it called.
 
-### 2. Example Basic `Error Definition`
+### 2. Example Basic `Error Definitions`
 
 ```go
 var (
