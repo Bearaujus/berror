@@ -1,4 +1,4 @@
-# BError - Error Wrapper Implementation in Go
+# BError - Error Utilities Implementation in Go
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bearaujus/berror/blob/master/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bearaujus/berror)](https://goreportcard.com/report/github.com/bearaujus/berror)
