@@ -1,3 +1,3 @@
-module github.com/Bearaujus/berror
+module github.com/bearaujus/berror
 
 go 1.18
